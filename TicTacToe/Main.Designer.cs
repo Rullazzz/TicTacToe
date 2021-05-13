@@ -29,37 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.играToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.новаяИграToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Turnlabel = new System.Windows.Forms.Label();
             this.PlayerTurnlabel = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.играToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(384, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // играToolStripMenuItem
-            // 
-            this.играToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.новаяИграToolStripMenuItem});
-            this.играToolStripMenuItem.Name = "играToolStripMenuItem";
-            this.играToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.играToolStripMenuItem.Text = "Игра";
-            // 
-            // новаяИграToolStripMenuItem
-            // 
-            this.новаяИграToolStripMenuItem.Name = "новаяИграToolStripMenuItem";
-            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.новаяИграToolStripMenuItem.Text = "Новая игра";
             // 
             // Turnlabel
             // 
@@ -86,25 +58,17 @@
             this.ClientSize = new System.Drawing.Size(384, 461);
             this.Controls.Add(this.PlayerTurnlabel);
             this.Controls.Add(this.Turnlabel);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Крестики-нолики";
             this.Load += new System.EventHandler(this.Main_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem играToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem новаяИграToolStripMenuItem;
         private System.Windows.Forms.Label Turnlabel;
         private System.Windows.Forms.Label PlayerTurnlabel;
     }
