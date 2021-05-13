@@ -58,7 +58,7 @@
             // новаяИграToolStripMenuItem
             // 
             this.новаяИграToolStripMenuItem.Name = "новаяИграToolStripMenuItem";
-            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.новаяИграToolStripMenuItem.Text = "Новая игра";
             // 
             // Turnlabel
@@ -82,6 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(384, 461);
             this.Controls.Add(this.PlayerTurnlabel);
             this.Controls.Add(this.Turnlabel);
