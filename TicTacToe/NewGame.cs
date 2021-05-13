@@ -13,26 +13,16 @@ namespace TicTacToe
         public NewGame()
         {
             InitializeComponent();
-            this.Errorlabel1.Text = "";
-            this.Errorlabel2.Text = "";
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
             if (sender is Button button)
             {
-                if (textBox1.Text != "" && textBox2.Text != "")
-                {
-                    FirstPlayer = textBox1.Text;
-                    SecondPlayer = textBox2.Text;
-                    IsNewNames = true;
-                    Close();
-                }
-                else
-                {
-                    this.Errorlabel1.Text = (textBox1.Text == "") ? "Пустое поле!" : "";
-                    this.Errorlabel2.Text = (textBox2.Text == "") ? "Пустое поле!" : "";
-                }                
+                FirstPlayer = textBox1.Text;
+                SecondPlayer = textBox2.Text;
+                IsNewNames = true;
+                Close();     
             }
             else
             {
@@ -42,8 +32,8 @@ namespace TicTacToe
 
         public void SetNewNames(ref string firstPlayer, ref string secondPlayer)
         {
-            firstPlayer = FirstPlayer;
-            secondPlayer = SecondPlayer;
+            firstPlayer = (string.IsNullOrWhiteSpace(FirstPlayer)) ? "NoName_1" : FirstPlayer; 
+            secondPlayer = (string.IsNullOrWhiteSpace(SecondPlayer)) ? "NoName_2" : SecondPlayer; 
         }
     }
 }

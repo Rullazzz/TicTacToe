@@ -34,8 +34,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button = new System.Windows.Forms.Button();
-            this.Errorlabel1 = new System.Windows.Forms.Label();
-            this.Errorlabel2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FirstPlayerNamelabel
@@ -84,36 +82,12 @@
             this.button.UseVisualStyleBackColor = true;
             this.button.Click += new System.EventHandler(this.Button_Click);
             // 
-            // Errorlabel1
-            // 
-            this.Errorlabel1.AutoSize = true;
-            this.Errorlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Errorlabel1.ForeColor = System.Drawing.Color.Red;
-            this.Errorlabel1.Location = new System.Drawing.Point(137, 92);
-            this.Errorlabel1.Name = "Errorlabel1";
-            this.Errorlabel1.Size = new System.Drawing.Size(81, 16);
-            this.Errorlabel1.TabIndex = 5;
-            this.Errorlabel1.Text = "ErrorLabel";
-            // 
-            // Errorlabel2
-            // 
-            this.Errorlabel2.AutoSize = true;
-            this.Errorlabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Errorlabel2.ForeColor = System.Drawing.Color.Red;
-            this.Errorlabel2.Location = new System.Drawing.Point(137, 161);
-            this.Errorlabel2.Name = "Errorlabel2";
-            this.Errorlabel2.Size = new System.Drawing.Size(81, 16);
-            this.Errorlabel2.TabIndex = 6;
-            this.Errorlabel2.Text = "ErrorLabel";
-            // 
             // NewGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(384, 381);
-            this.Controls.Add(this.Errorlabel2);
-            this.Controls.Add(this.Errorlabel1);
             this.Controls.Add(this.button);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -135,7 +109,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Label Errorlabel1;
-        private System.Windows.Forms.Label Errorlabel2;
     }
 }
